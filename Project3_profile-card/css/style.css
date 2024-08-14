@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.container {
+  max-width: 470px;
+  width: 100%;
+}
+.container .card {
+  background: rgb(202, 255, 228);
+  padding: 50px;
+  border-radius: 20px;
+  border: 5px solid #003566;
+}
+.container .card .social-links a {
+  color: #003566;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  list-style: none;
+}
+.container .card .social-links a.fb {
+  color: #0862f6;
+}
+.container .card .social-links a.pr {
+  color: #bd0816;
+}
+.container .card .social-links a.x {
+  color: black;
+}
+.container .card .social-links a.gh {
+  color: rgb(29, 29, 29);
+}
+.container .card .social-links a.ig {
+  color: rgba(184, 0, 184, 0.836);
+}
+.container .card .social-links a:hover {
+  transform: translateY(-10px);
+}
+.container .card .heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.container .card p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.container .card .btns button {
+  margin: 0 20px;
+  padding: 10px 35px;
+  font-size: 1.2rem;
+  background: springgreen;
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px green;
+}
+.container .card .btns button:hover {
+  box-shadow: 4px 4px green;
+}
+img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #003566;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
