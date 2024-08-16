@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Michroma', sans-serif;
+}
+body {
+    background: rgb(0, 0, 0);
+    justify-content: center;
+    display: flex;
+    margin: 100px 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.card{
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    width: 70vw;
+    height: 70vh;
+    font-size: 24px;
+    position: relative;
+    border: 5px solid dimgray;
+}
+.time{
+    padding-top: 40px;
+    font-size: 1.4rem;
+    color: dimgrey;
+}
+.icon{
+    margin-top: 100px;
+}
+.weather-heading h1{
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+}
+.weather-heading span{
+    font-size: 2rem;
+    color: rgb(71, 71, 71);
+}
+.weather-heading{
+    margin-bottom: 20px;
+}
+.details {
+    display: flex;
+    padding: 30px;
+}
+.details h2 {
+    font-size: 1.4rem;
+}
+.details span {
+    font-size: 1rem;
+    color: dimgrey;
+}
+.detail1, 
+.detail2{
+    border-right: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 90vh;
+    }
+    .details {
+        flex-direction: column;
+        gap: 40px;
+        border-top: 1px solid gray;
+    }
+    .detail1,
+    .detail2 {
+        border: none;
+    }
+}
