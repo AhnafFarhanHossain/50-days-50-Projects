@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Forum", sans-serif;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.sub-head {
+  letter-spacing: 5px;
+  margin-bottom: 0.7rem;
+  font-family: system-ui;
+  font-weight: 600;
+  color: #344e41;
+}
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: #dad7cd;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 50px;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background: hsl(82, 20%, 80%);
+  border: 1px solid hsl(131, 22%, 69%);
+  max-width: 450px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.card2 {
+    background: hsl(152, 28%, 80%);
+}
+.card3 {
+    background: hsl(131, 22%, 79%);
+}
+
+@media (max-width: 1200px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    .card3{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .grid-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        max-width: 530px;
+    }
+}
